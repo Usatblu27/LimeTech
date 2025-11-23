@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  top: 0;
+}
+:root {
+  --color-theme: black;
+  --color-light: lime;
+  --shadow: 0 0 5px var(--color-light), 0 0 20px var(--color-light);
+}
+@font-face {
+  font-family: Rubik;
+  src: url("../fonts/Rubik-VariableFont_wght.ttf");
+}
+body {
+  background-color: var(--color-theme);
+  color: var(--color-light);
+  text-shadow: var(--shadow);
+  font-size: 18px;
+  font-family: Rubik;
+  font-weight: 600;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: calc(100vw - 4px);
+  height: 100px;
+  background-color: var(--color-theme);
+  border: 2px solid var(--color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 20px;
+  z-index: 100;
+}
+.icon {
+  border: 2px solid var(--color-light);
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 10px;
+  background-image: url("../image/icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.icon:hover {
+  box-shadow: var(--shadow);
+  transition-duration: 0.3s;
+}
+.icon:active {
+  width: 70px;
+  height: 70px;
+  transition-duration: 0.3s;
+}
+.item {
+  border: 2px solid var(--color-light);
+  min-width: 50px;
+  padding-inline: 20px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--color-light);
+  text-align: center;
+  line-height: 60px;
+}
+.item:hover {
+  box-shadow: var(--shadow);
+  transition-duration: 0.3s;
+}
+.item:active {
+  padding-inline: 30px;
+  height: 70px;
+  line-height: 70px;
+  transition-duration: 0.3s;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.contacts-container {
+  width: 60vw;
+  min-height: 500px;
+  border: 2px solid var(--color-light);
+  margin-top: 50px;
+  background-image: url("../image/contacts.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.list {
+  color: white;
+  opacity: 1;
+  background-color: rgba(00, 00, 00, 0.7);
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  padding: 100px;
+}
+.carousel-container {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  margin-top: 120px;
+}
+.carousel-wrapper {
+  overflow: hidden;
+  border: 2px solid var(--color-light);
+  border-radius: 10px;
+}
+.carousel-track {
+  display: flex;
+}
+.card {
+  width: 775px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-light);
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-shadow: 0 0 5px black, 0 0 15px black, 0 0 20px black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 50px;
+  text-align: center;
+  opacity: 0.8;
+}
+.card:nth-child(1) {
+  background-image: url("https://edelws.ru/local/templates/main/img/edelweiss-powerpc.jpg");
+}
+.card:nth-child(2) {
+  background-image: url("https://cubiq.ru/wp-content/uploads/2020/11/gaming-pc-780x438.jpg");
+}
+.card:nth-child(3) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSubXR_h1SU373zDuyyW594XdBYZLagk1qfg&s");
+}
+.card:nth-child(4) {
+  background-image: url("https://kartinki.pibig.info/uploads/posts/2023-04/1681807656_kartinki-pibig-info-p-kartinki-igrovoi-kompyuter-arti-krasivo-15.jpg");
+}
+.card:nth-child(5) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6xr7wWNYvkAVW6d4N-js64opUK2d6cvLzew&s");
+}
+.nav-button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  background-color: var(--color-theme);
+  border: 2px solid var(--color-light);
+  color: var(--color-light);
+  border-radius: 50%;
+  padding: 10px 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 20px;
+  text-align: center;
+  margin-inline: -50px;
+}
+.prev-button {
+  left: -40px;
+}
+.next-button {
+  right: -40px;
+}
+.text {
+  font-size: 72px;
+  width: 100%;
+  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 7px rgb(255, 255, 255);
+}
+.pc-types-container {
+  width: 800px;
+  height: 500px;
+  border: 2px solid var(--color-light);
+  border-radius: 10px;
+  margin-top: 150px;
+}
+.text {
+  text-align: center;
+}
+.list-main {
+  font-size: 30px;
+  padding: 70px;
+}
+
+.market-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  border: 2px solid var(--color-light);
+  border-radius: 10px;
+  margin-top: 25px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.market-line {
+  width: 760px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.item-marker {
+  border: 2px solid var(--color-light);
+  height: 100%;
+  width: 180px;
+}
